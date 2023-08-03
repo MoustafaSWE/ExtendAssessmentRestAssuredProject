@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="in.reqres.listeners.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="/home/moustafa-ismail/IdeaProjects/ExtendAssessmentRestAssuredProject">
+        <classes>
+            <class name="in.reqres.e2e.E01_UserCycle">
+                <methods>
+                    <include name="createUsers"/>
+                    <include name="getSingleUserById"/>
+                    <include name="updateCreatedUser"/>
+                    <include name="getUsersList"/>
+                    <include name="deleteRequestTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
